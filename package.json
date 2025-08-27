@@ -1,27 +1,26 @@
 {
-  "name": "mr-ntando-ofc",
+  "name": "LADYBUG",
   "version": "1.0.0",
-  "description": "MR NTANDO OFC - Bot Expert Website",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js",
-    "build": "echo 'Build completed successfully'",
-    "dev": "node server.js",
-    "postinstall": "echo 'Dependencies installed'"
-  },
-  "keywords": [
-    "whatsapp-bot",
-    "bot-repair",
-    "web-development",
-    "mr-ntando"
-  ],
-  "author": "MR NTANDO OFC",
-  "license": "MIT",
+  "description": "LADYBUG WhatsApp Pair Code Generator",
+  "main": "index.js",
+  "type": "module",
   "engines": {
-    "node": "18.x",
-    "npm": "9.x"
+    "node": ">=20.0.0"
   },
+  "scripts": {
+    "start": "node index.js",
+    "build": "echo 'No build step required'"
+  },
+  "author": "Ntando-Tech",
+  "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "@whiskeysockets/baileys": "latest",
+    "qrcode": "^1.5.4",
+    "awesome-phonenumber": "7.2.0",
+    "pino": "9.5.0",
+    "phone": "3.1.55",
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2",
+    "path": "^0.12.7"
   }
 }
